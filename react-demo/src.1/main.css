@@ -1,0 +1,14 @@
+body{
+    background-color: #000;
+    width: 1200px;
+}
+.Header{    
+    width: 1200px;
+    margin: 0 auto;
+    background: #444;
+} 
+.Main{
+    margin: 0 auto;
+    background: #555;
+    height: 500px;
+}
