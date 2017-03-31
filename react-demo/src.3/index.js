@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './App.jsx';
+// import Tabs from './Tabs';
+import Collapse from './Collapse'
 ReactDOM.render(
-    <div>
-
-             < App />
-
-    </div>,
+    <Collapse />,
     document.getElementById('root')
 )

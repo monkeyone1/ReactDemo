@@ -17,9 +17,11 @@ class Collapse extends Component {
    handShow(index) {
        console.log(index);
        this.setState({show:index});
-       this.refs.Test.handleShow()
+       this.Test.handleShow()
       // console.log(this.refs.input.value);
+      console.log(this.input1.value);
    }
+  
     render() {
         let str1=this.state.data.map((item,index,array ) => 
         <div key={index}><button onClick={this.handShow.bind(this,index)}>{item.btn}</button> 
@@ -27,7 +29,8 @@ class Collapse extends Component {
         return (
             <div>
                 {str1}
-                <Test ref='Test'  />                
+                <Test ref={Test=>this.Test=Test}  />   
+                <input ref={input=>this.input1=input}/>            
             </div>
         )
     }
