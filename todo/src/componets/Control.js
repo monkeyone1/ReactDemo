@@ -21,7 +21,9 @@ class Control extends Component {
                 分类:{this
                     .state
                     .btns
-                    .map((x) => <button key={Math.random()}>{x}</button>)}
+                    .map((x) => <button onClick={() => this.props.handleFilter(x)
+                        
+                    }key={Math.random()}>{x}</button>)}
             </div>
         );
     }
