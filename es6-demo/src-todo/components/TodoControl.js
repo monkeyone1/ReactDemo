@@ -8,17 +8,13 @@ class TodoControl extends React.Component {
     }
   }
   render() {
-       let styles={
-           
-            fontSize:'20px',
-            marginLeft:'20px'
-        }
+      
     return (
       <div>
         分类： {this
           .state
           .btns
-          .map(item => <button style={styles}
+          .map(item => <button 
             onClick={() => this.props.handleFilter(item)}
             key={Math.random()}
             className={this.props.visible == item
