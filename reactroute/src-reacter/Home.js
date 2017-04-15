@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import Nav from './nav.js';
 
 class Home extends Component {
-    render() {
+    
+        render() {
         console.log(this.props);
         return (
             <div>

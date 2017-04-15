@@ -1,14 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <h1>conde 中文社区</h1>
-                {this.props.children}
-            </div>
-        );
-    }
+import Header from './component/Header.js';
+import Footer from './component/Footer.js';
+
+class App extends React.Component{
+  render(){
+    return(
+      <div>
+        <Header />
+
+        {this.props.children}
+
+        <Footer />
+      </div>
+    )
+  }
 }
 
 export default App;
