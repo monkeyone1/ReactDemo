@@ -1,4 +1,10 @@
-import hello from './c.js';
-let a=(x,y) =>x+y;
-console.log(hello);
-console.log(a(2,3));
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './main.css'
+import bg from './101.jpg';
+ReactDOM.render(
+  <div>
+  <img src={bg} alt="img"/>
+  hello world</div>,
+  document.getElementById('root')
+)
